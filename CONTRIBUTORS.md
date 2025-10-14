@@ -5,8 +5,8 @@ Questo file elenca le persone che hanno contribuito al progetto WAY.
 ## Core Team
 
 - **WAY Project Team** - Sviluppo e manutenzione
-Evangelista della Ventura [evangelistadellaventura@lscortese.com](evangelistadellaventura@lscortese.com)
-Luca Adalberto Vandro [lucavandro@lscortese.com](lucavandro@lscortese.com)
+Evangelista della Ventura [evangelistadellaventura@lscortese.com](ivano@ldellaventura.it)
+Luca Adalberto Vandro [lucavandro@gmail.com](lucavandro@gmail.com)
 
 ## Come Contribuire
 
