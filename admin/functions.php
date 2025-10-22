@@ -11,10 +11,10 @@ function getDBConnection()
         $password = $_ENV["MYSQL_PASSWORD"];
         $dbname = $_ENV["MYSQL_DATABASE"];
     } else {
-        $servername = "31.11.39.174";
-        $dbname = "Sql1322552_2";
-        $username = "Sql1322552";
-        $password = "%Z7RQBN!#aYbLM";
+        $servername = "localhost";
+        $dbname = "dbname";
+        $username = "username";
+        $password = "password";
     }
 
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -24,19 +24,6 @@ function getDBConnection()
     } else {
         return $conn;
     }
-}
-
-function getDbMW(){
-	$dbHost     = "31.11.39.174"; 
-	$dbUsername = "Sql1322552"; 
-	$dbPassword = "%Z7RQBN!#aYbLM"; 
-	$dbName     = "Sql1322552_5";
-
-	$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName); 
- 
-	if ($db->connect_error) die("Connessione fallita: " . $db->connect_error); 
-
-	return $db;
 }
 
 
@@ -743,4 +730,8 @@ function canc_sost($codice)
 
     $stmt->close();
     $conn->close();    
+}
+
+function show_message($testo){
+    echo '<dialog id="msg" open style="text-align:center"><div>'.$testo.'<br><br><button class="secondary" onclick="document.getElementById(\'msg\').close()">Chiudi</button></div></dialog>';
 }
