@@ -1,0 +1,131 @@
+@media (min-width: 576px) {
+    :root {
+        --pico-font-size:100%
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --pico-font-size:105%
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --pico-font-size: 110%
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --pico-font-size:115%
+    }
+}
+
+@media (min-width: 1536px) {
+    :root {
+        --pico-font-size:120%
+    }
+}
+
+main{
+    min-height: calc(100vh - 200px);
+}
+.error{
+    color: var(--pico-del-color);
+}
+
+
+
+article header a[role=button],
+article header mark{
+    float: right;
+    display: block;
+    padding: 2px 24px;
+}
+
+.hidden{
+    display: none;
+}
+body{
+    min-height: 100dvh;
+}
+footer{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+td, th{
+    font-size: smaller;
+    text-align: center;
+}
+
+td > form> button[type=submit]{
+    padding: 0;
+    display: inline;
+    width: auto;
+    background: transparent;
+    border: transparent;
+    color: var(--pico-del-color);
+    font-size: small;
+    margin-bottom: 0;
+}
+
+
+td > button.insert{
+    padding: 0;
+    display: inline;
+    width: auto;
+    background: transparent;
+    border: transparent;
+    color: var(--pico-ins-color);
+    font-size: small;
+    margin-bottom: 0;
+}
+
+
+dialog form fieldset{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--pico-spacing);
+}
+
+.riepilogo article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+[class^="badge-"] {
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    contain: content;
+    vertical-align: middle;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+nav [class^="badge-"]{
+    margin-bottom: 3px;
+}
+
+.badge-success{
+    background: var(--pico-ins-color);
+}
+
+.badge-error{
+    background: var(--pico-del-color);
+}
