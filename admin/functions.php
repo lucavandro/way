@@ -468,9 +468,7 @@ function login($username, $password)
 function get_user($username)
 {
     $utenti = [
-        "luca" => "126f3ab4774a6fc59d46c43adfc1acfa",
-        "ivano" => "014a886bf1d2eb1a4a7a2f8ecc902587",
-        "rosa" => "b0fbcdb8fd83a8ddb1ba4a2459be5987"
+        "admin" => "cf2f83081b0adbf3bf3877e1eac59bb9"      //la password di default è wayscuola   
     ];
     return $utenti[$username];
 }
